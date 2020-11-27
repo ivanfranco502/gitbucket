@@ -1,0 +1,11 @@
+{
+    "name": "Gitbucket",
+    "version": "1.0",
+    "description": "Improving the GitHub PRs UI/UX experience",
+    "permissions": ["storage"],
+    "background":{
+        "scripts": ["gitbucket.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
+}
