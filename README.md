@@ -3,8 +3,9 @@
 GitHub PR extension - It improves the UI/UX experience
 
 ### Features
-1. Configure if you want to see PRs with or without whitespaces.
+1. Configure if you want to see PRs with or without whitespace changes.
 
 ### Future funtionalities:
-1. Show the changed files tree.
-2. Search for a particular file name.
+1. Configure if you want to see PRs with Unified or Diff visualization.
+2. Show the changed files tree.
+3. Search for a particular file name.
