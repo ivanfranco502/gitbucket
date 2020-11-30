@@ -1,0 +1,12 @@
+body {
+    width: 200px;
+    padding: 0px 20px
+}
+.flex-item {
+    display:flex;
+    align-items: center;
+}
+.flex-item img{
+    flex-grow:0;
+    flex-shrink:0;
+}
