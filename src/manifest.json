@@ -4,9 +4,15 @@
     "description": "Improving the GitHub PRs UI/UX experience",
     "permissions": ["declarativeContent", "storage"],
     "background":{
-        "scripts": ["gitbucket.js"],
+        "scripts": ["installation.js"],
         "persistent": false
     },
+    "content_scripts":[
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["gitbucket.js"]
+        }
+    ],
     "page_action": {
         "default_popup": "settings.html",
         "default_icon": {

@@ -1,14 +1,14 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({hideWhitespace: false}, function() {
-        console.log("Hide whitespace changes is false");
-    });
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-        chrome.declarativeContent.onPageChanged.addRules([{
-          conditions: [new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: {hostEquals: 'github.com'},
-          })
-          ],
-              actions: [new chrome.declarativeContent.ShowPageAction()]
-        }]);
-      });
+chrome.storage.sync.get('hideWhitespace', function(data) {
+    let regex = /([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?\/pull\/[0-9]+\/files/gi;
+    let hideWhitespace = data.hideWhitespace;
+
+    if (hideWhitespace) {
+        let anchors = document.getElementsByTagName("a"); 
+        for (let idx = 0; idx < anchors.length; ++idx) {
+            if (anchors[idx].href.match(regex)) {
+                anchors[idx].href += "?w=1"; 
+            }
+        }
+    }
 });
+  
