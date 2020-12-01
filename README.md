@@ -1,3 +1,4 @@
+![Logo](https://github.com/ivanfranco502/gitbucket/blob/main/src/img/gitbucket.png)
 # Gitbucket
 ## The best of two worlds. 
 GitHub PR extension - It improves the UI/UX experience
