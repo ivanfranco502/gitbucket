@@ -7,8 +7,8 @@ GitHub PR extension - It improves the UI/UX experience
 1. Configure if you want to see PRs with or without whitespace changes.
 
 ### Future funtionalities:
-1. Configure if you want to see PRs with Unified or Diff visualization.
-2. Show a message in the top of the PR page showing that the PR has conflicts.
-3. Show approvers in the general pr/search page.
+1. Show a message in the top of the PR page showing that the PR has conflicts.
+2. Show approvers in the general pr/search page.
+3. Configure if you want to see PRs with Unified or Diff visualization.
 4. Show the changed files tree.
 5. Search for a particular file name.
